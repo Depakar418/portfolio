@@ -1,0 +1,194 @@
+* body{
+    margin: 0;
+}
+header {
+    background-color:black;
+    padding: 20px;
+   
+  }
+  
+  footer {
+    background-color:black;
+    padding:20px; 
+    text-align: center;
+  }
+  
+  .nav {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    font-size: 25px;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+  }
+  .container a{
+    color: white;
+  }
+  .container a:hover{
+    color: aqua;
+  }
+  .row .col-md-6{
+    color: white;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+    background-image: url(../images/yellow.avif);
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+#services p{
+    font-size: 25px;
+  }
+  .menu-subitem{
+    text-align: center;
+    font-size: 75px;
+    background-color: lightblue;
+    padding: 10px 0;
+    border: solid black;
+    box-shadow: 2px 3px 10px;
+  }
+  #projects {
+    text-align: center; 
+    margin-bottom: 20px; 
+    width: 100%
+  
+  }
+  .project-item {
+    flex: 1;
+    padding: 10px; 
+    margin: 5px;
+    text-align: center; 
+    border: 1px solid black;
+    box-shadow: 2px 3px 10px ;
+    background-color: white;
+  }
+  .projects-container {
+    display: flex; 
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto; 
+    height: 650px;
+   
+   
+  
+  }
+  
+  .project-item a:hover {
+    color: #007bff;
+  }
+  .project-item  p{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .project-link{
+    font-size: 25px;
+  }
+  
+  
+  .project-item {
+    transition: transform 0.2s ease-in-out;
+  }
+  .project-item:hover {
+    transform: scale(1.05);  
+  }
+  
+  
+  
+  
+  #skills{
+    width: 100%;
+  }
+  .chart-container {
+    width: 600px; 
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 65px;
+    border: 1px solid black;
+    box-shadow: 2px 3px 10px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: white ;
+    line-height: 55px;
+  }
+  
+  .chart-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    
+  }
+  
+  .chart-bar{
+    height: 20px;
+    background-color: purple;
+    position: relative; 
+    transition: width 1s ease-in-out;}
+  
+  
+  .chart-bar-text {
+    position: absolute; 
+    right: 5px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: white; 
+    font-size: 0.8rem; 
+  }
+  
+  
+  .main-topic {
+    font-weight: bold;
+
+}
+.topic{
+            text-align: center;
+            font-size: 35px;
+ }
+
+.menu-item
+{
+  text-align: center;
+  font-size: 75px;
+  background-color: lightblue;
+  padding: 10px 0;
+  border: solid black;
+  box-shadow: 2px 3px 10px;
+  
+}
+
+
+
+.sub-topic{
+  text-align: center;
+  font-size: 35px;
+}
+a{
+  color: black
+}
+a:hover {
+  color: #007bff;
+}
+footer a{
+  color:  white;
+  text-decoration: none;
+}
+footer a:hover{
+  color:  aqua;
+  text-decoration: none;
+}

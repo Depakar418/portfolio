@@ -1,0 +1,137 @@
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  background-image: url(../images/yellow.avif);
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.blog-post {
+  border: 1px black;
+  box-shadow: 2px 3px 10px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  background-color: rgb(221, 221, 221);
+}
+
+header {
+  background-color:black;
+  padding: 20px;
+  margin: 0;
+}
+
+footer {
+  background-color:black;
+  padding:20px; 
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  font-size: 25px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.container a{
+  color: white;
+}
+.container a:hover{
+  color: aqua;
+}
+.row .col-md-6{
+  color: white;
+}
+#blog{
+  margin-top: 60px;
+ }
+.col-md-4 {
+  flex: 0 0 30%;
+}
+#blog .row{
+  margin: 20px;
+}
+span{
+  color: red;
+  font-size: 20px;
+}
+.blog-post h2{
+  text-align: center;
+}
+.link a{
+  color: royalblue;
+  text-decoration: none;
+}
+.link a:hover{
+  color: blue;
+}
+body {
+  margin: 0;
+}
+
+
+.main-topic {
+  font-weight: bold;
+
+}
+.topic{
+          text-align: center;
+          font-size: 35px;
+}
+
+.menu-item
+{
+text-align: center;
+font-size: 75px;
+background-color: lightblue;
+padding: 10px 0;
+border: solid black;
+box-shadow: 2px 3px 10px;
+
+}
+
+
+
+.sub-topic{
+text-align: center;
+font-size: 35px;
+}
+a{
+color: black;
+text-decoration: none;
+}
+a:hover {
+color: #007bff;
+}
+h1{
+  text-align: center;
+}
+.menu-item
+{
+  text-align: center;
+  font-size: 75px;
+  background-color: lightblue;
+  padding: 10px 0;
+  border: solid black;
+  box-shadow: 2px 3px 10px;
+  
+}
