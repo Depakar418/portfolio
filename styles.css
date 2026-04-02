@@ -884,6 +884,17 @@ body[data-page="projects"] .projects-grid {
   padding-right: 2.2rem;
 }
 
+.contact-form .btn {
+  width: fit-content;
+  justify-self: start;
+  align-self: start;
+  border-radius: 6px;
+}
+
+.contact-form .btn:hover {
+  transform: none;
+}
+
 .field-hint {
   display: block;
   margin-top: 0.32rem;
@@ -1388,6 +1399,10 @@ body[data-page="projects"] .projects-grid {
 @media (max-width: 480px) {
   .btn {
     width: 100%;
+  }
+
+  .contact-form .btn {
+    width: fit-content;
   }
 
   .hero-actions {

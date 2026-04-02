@@ -444,27 +444,33 @@ function initContactForm() {
   }
 
   contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
     const endpoint = contactForm.dataset.formspreeEndpoint?.trim();
 
     if (honeypot?.value) {
+      event.preventDefault();
       setFormNote("Thanks! Your message was sent successfully.", "is-success");
       contactForm.reset();
       regenerateCaptcha();
       return;
     }
 
+    if (!contactForm.reportValidity()) {
+      event.preventDefault();
+      setFormNote("Please fill all required fields correctly.", "is-error");
+      return;
+    }
+
     if (captchaAnswerInput && Number(captchaAnswerInput.value) !== captchaExpected) {
+      event.preventDefault();
+      captchaAnswerInput.setCustomValidity("Math verification failed. Please try again.");
+      captchaAnswerInput.reportValidity();
+      captchaAnswerInput.setCustomValidity("");
       setFormNote("Math verification failed. Please try again.", "is-error");
       regenerateCaptcha();
       return;
     }
 
-    if (!contactForm.checkValidity()) {
-      setFormNote("Please fill all required fields correctly.", "is-error");
-      contactForm.reportValidity();
-      return;
-    }
+    event.preventDefault();
     if (!endpoint) {
       setFormNote(
         "Form endpoint missing. Add your Formspree endpoint to data-formspree-endpoint in contact.html.",
