@@ -201,8 +201,8 @@ a {
 }
 
 .whatsapp-btn {
-  width: 2.7rem;
-  height: 2.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
   padding: 0;
   background: linear-gradient(120deg, #1dbf73, #15a866);
   color: #f4fff9;
@@ -210,8 +210,8 @@ a {
 }
 
 .whatsapp-btn .whatsapp-icon {
-  width: 1.45rem;
-  height: 1.45rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: block;
 }
 
