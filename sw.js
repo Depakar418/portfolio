@@ -1,9 +1,9 @@
-const CACHE_NAME = "portfolio-static-v20260403";
+const CACHE_NAME = "portfolio-static-v20260404";
 const BASE_PATH = "/portfolio";
 const PRECACHE_URLS = [
   `${BASE_PATH}/`,
-  `${BASE_PATH}/styles.css?v=20260402`,
-  `${BASE_PATH}/script.js?v=20260402`,
+  `${BASE_PATH}/styles.css?v=20260403`,
+  `${BASE_PATH}/script.js?v=20260403`,
   `${BASE_PATH}/assets/favicon.svg`,
   `${BASE_PATH}/assets/profile-placeholder.svg`
 ];
