@@ -16,7 +16,7 @@
       content="Professional WordPress developer portfolio with services, projects, and company experience."
     />
     <meta property="og:url" content="https://depakar418.github.io/portfolio/" />
-    <meta property="og:image" content="https://depakar418.github.io/portfolio/assets/profile.png" />
+    <meta property="og:image" content="https://depakar418.github.io/portfolio/assets/profile-placeholder.svg" />
     <meta property="og:site_name" content="Depakar B Portfolio" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Home | Depakar B - WordPress Developer" />
@@ -24,14 +24,10 @@
       name="twitter:description"
       content="Professional WordPress developer portfolio with services, projects, and company experience."
     />
-    <meta name="twitter:image" content="https://depakar418.github.io/portfolio/assets/profile.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css?v=20260402" />
+    <meta name="twitter:image" content="https://depakar418.github.io/portfolio/assets/profile-placeholder.svg" />
+    <link rel="preload" as="style" href="./styles.css?v=20260402" />
+    <link rel="stylesheet" href="./styles.css?v=20260402" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="./styles.css?v=20260402" /></noscript>
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
   </head>
   <body data-page="home" data-root=".">
@@ -63,7 +59,16 @@
           </div>
         </div>
         <div class="hero-image-card reveal">
-          <img src="./assets/profile-placeholder.svg" alt="Your profile photo" class="hero-photo" data-auto-profile="true" />
+          <img
+            src="./assets/profile.png"
+            alt="Your profile photo"
+            class="hero-photo"
+            data-auto-profile="true"
+            width="468"
+            height="470"
+            decoding="async"
+            fetchpriority="high"
+          />
         </div>
       </section>
 
@@ -80,10 +85,10 @@
 
       <section id="faq" class="section">
         <div class="stats-grid">
-          <article class="stat-card reveal"><h3><span class="counter" data-target="10">0</span>+</h3><p>Projects Completed</p></article>
-          <article class="stat-card reveal"><h3><span class="counter" data-target="3">0</span>+</h3><p>Years Experience</p></article>
-          <article class="stat-card reveal"><h3><span class="counter" data-target="95">0</span>%</h3><p>Lighthouse Performance</p></article>
-          <article class="stat-card reveal"><h3><span class="counter" data-target="100">0</span>%</h3><p>Mobile Responsive Delivery</p></article>
+          <article class="stat-card reveal"><p class="stat-value"><span class="counter" data-target="10">0</span>+</p><p>Projects Completed</p></article>
+          <article class="stat-card reveal"><p class="stat-value"><span class="counter" data-target="3">0</span>+</p><p>Years Experience</p></article>
+          <article class="stat-card reveal"><p class="stat-value"><span class="counter" data-target="95">0</span>%</p><p>Lighthouse Performance</p></article>
+          <article class="stat-card reveal"><p class="stat-value"><span class="counter" data-target="100">0</span>%</p><p>Mobile Responsive Delivery</p></article>
         </div>
       </section>
 

@@ -57,6 +57,7 @@ function initSite() {
   initYear();
   initAutoProfileImage();
   initContactForm();
+  registerServiceWorker();
 }
 
 function initTickerLoop() {
@@ -357,34 +358,21 @@ function initAutoProfileImage() {
   if (!autoProfileImage) {
     return;
   }
-  const initialSrc = autoProfileImage.getAttribute("src") || "./assets/profile-placeholder.svg";
   const defaultPlaceholder = "./assets/profile-placeholder.svg";
-  const fallbackCandidates = [
-    "./assets/profile.png",
-    "./assets/profile.jpg",
-    "./assets/profile.jpeg",
-    "./assets/profile.webp",
-    "./assets/my-photo.jpg",
-    "./assets/my-photo.png",
-    "./assets/photo.jpg",
-    "./assets/photo.png",
-    "./assets/profile.pnh"
-  ];
-  const isPlaceholderSrc = initialSrc.includes("profile-placeholder.svg");
-  const candidates = isPlaceholderSrc
-    ? [...fallbackCandidates, defaultPlaceholder]
-    : [initialSrc, ...fallbackCandidates.filter((src) => src !== initialSrc), defaultPlaceholder];
-  let imageIndex = 0;
-  function tryNextImage() {
-    if (imageIndex >= candidates.length) {
-      autoProfileImage.src = defaultPlaceholder;
-      return;
-    }
-    autoProfileImage.src = candidates[imageIndex];
-    imageIndex += 1;
+  autoProfileImage.src = autoProfileImage.getAttribute("src") || defaultPlaceholder;
+  autoProfileImage.addEventListener("error", () => {
+    autoProfileImage.src = defaultPlaceholder;
+  });
+}
+
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) {
+    return;
   }
-  autoProfileImage.addEventListener("error", tryNextImage);
-  tryNextImage();
+  const rootPath = document.body.dataset.root || ".";
+  navigator.serviceWorker.register(`${rootPath}/sw.js`).catch(() => {
+    // Swallow registration failures in unsupported contexts.
+  });
 }
 
 function initContactForm() {
