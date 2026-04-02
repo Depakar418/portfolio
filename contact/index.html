@@ -39,34 +39,7 @@
             <h3>Location</h3>
             <p><span class="contact-icon">📍</span> Bangalore, India</p>
           </article>
-          <form class="contact-form reveal" id="contact-form" data-formspree-endpoint="https://formspree.io/f/mreokkjq" novalidate>
-            <div class="form-popup" id="form-success-popup" role="alertdialog" aria-live="polite" aria-modal="true" aria-hidden="true">
-              <div class="form-popup__content">Thanks for contacting me. I will contact you soon.</div>
-            </div>
-            <input type="hidden" name="_subject" value="New Portfolio Inquiry - Depakar B" />
-            <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
-            <label>Email<input type="email" name="email" placeholder="name@email.com" required /></label>
-            <label>
-              Service Needed
-              <select name="service" required>
-                <option value="" selected disabled>Select a service</option>
-                <option value="WordPress Development">WordPress Development</option>
-                <option value="Custom Plugin Development">Custom Plugin Development</option>
-                <option value="WooCommerce Optimization">WooCommerce Optimization</option>
-                <option value="AMP Optimization">AMP Optimization</option>
-                <option value="Performance Optimization">Performance Optimization</option>
-                <option value="Technical SEO">Technical SEO</option>
-                <option value="Hire Me">Hire Me</option>
-                <option value="Other">Other</option>
-              </select>
-              <small class="field-hint">If you choose "Other", mention details in the Project Details field below.</small>
-            </label>
-            <label>Project Details<textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea></label>
-            <label class="hp-field" aria-hidden="true">Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
-            <label class="captcha-row">Math check: <span id="captcha-question">2 + 3 = ?</span><input type="number" id="captcha-answer" name="captcha_answer" placeholder="Answer" required /></label>
-            <button type="submit" class="btn btn-primary magnetic">Send Inquiry</button>
-            <p class="form-note" id="form-note" role="status" aria-live="polite">Fill the form and pass math check to submit.</p>
-          </form>
+          <div data-include="contact-form"></div>
         </div>
       </section>
     </main>

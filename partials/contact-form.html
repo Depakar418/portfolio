@@ -1,0 +1,50 @@
+<form class="contact-form reveal" id="contact-form" data-formspree-endpoint="https://formspree.io/f/mreokkjq">
+  <div class="form-popup" id="form-success-popup" role="alertdialog" aria-live="polite" aria-modal="true" aria-hidden="true">
+    <div class="form-popup__content">Thanks for contacting me. I will contact you soon.</div>
+  </div>
+  <input type="hidden" name="_subject" value="New Portfolio Inquiry - Depakar B" />
+  <label>
+    <span class="label-text">Name <span class="required-mark" aria-hidden="true">*</span></span>
+    <input type="text" name="name" placeholder="Your name" required />
+  </label>
+  <label>
+    <span class="label-text">Email <span class="required-mark" aria-hidden="true">*</span></span>
+    <input type="email" name="email" placeholder="name@email.com" required />
+  </label>
+  <label>
+    <span class="label-text">Service Needed <span class="required-mark" aria-hidden="true">*</span></span>
+    <select name="service" required>
+      <option value="" selected disabled>Select a service</option>
+      <option value="WordPress Development">WordPress Development</option>
+      <option value="Custom Plugin Development">Custom Plugin Development</option>
+      <option value="WooCommerce Optimization">WooCommerce Optimization</option>
+      <option value="AMP Optimization">AMP Optimization</option>
+      <option value="Performance Optimization">Performance Optimization</option>
+      <option value="Technical SEO">Technical SEO</option>
+      <option value="Hire Me">Hire Me</option>
+      <option value="Other">Other</option>
+    </select>
+    <small class="field-hint">If you choose "Other", mention details in the Project Details field below.</small>
+  </label>
+  <label>
+    <span class="label-text">Project Details <span class="required-mark" aria-hidden="true">*</span></span>
+    <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+  </label>
+  <label class="hp-field" aria-hidden="true">
+    Leave this field empty
+    <input type="text" name="company_website" tabindex="-1" autocomplete="off" />
+  </label>
+  <label class="captcha-row">
+    <span class="label-text">Math check: <span id="captcha-question">2 + 3 = ?</span> <span class="required-mark" aria-hidden="true">*</span></span>
+    <input type="number" id="captcha-answer" name="captcha_answer" placeholder="Answer" required />
+  </label>
+  <label class="consent-row">
+    <input type="checkbox" name="privacy_consent" required />
+    <span class="consent-text">
+      I accept the <a href="#" data-route="/privacy-policy/">Privacy Policy</a>
+      <span class="required-mark" aria-hidden="true">*</span>
+    </span>
+  </label>
+  <button type="submit" class="btn btn-primary magnetic">Send Inquiry</button>
+  <p class="form-note" id="form-note" role="status" aria-live="polite">Fill the form and pass math check to submit.</p>
+</form>

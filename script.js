@@ -11,9 +11,19 @@ async function injectSharedLayout() {
 
   const cache = {};
   const rootPath = document.body.dataset.root || ".";
+  const includeMap = {
+    header: "header.html",
+    footer: "footer.html",
+    "contact-form": "contact-form.html"
+  };
+
   for (const node of includeNodes) {
     const type = node.getAttribute("data-include");
-    const filePath = type === "header" ? `${rootPath}/partials/header.html` : `${rootPath}/partials/footer.html`;
+    const includeFile = includeMap[type];
+    if (!includeFile) {
+      continue;
+    }
+    const filePath = `${rootPath}/partials/${includeFile}`;
     if (!cache[filePath]) {
       const response = await fetch(filePath);
       cache[filePath] = response.ok ? await response.text() : "";
