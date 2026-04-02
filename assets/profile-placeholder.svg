@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">A neutral placeholder image for profile photo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2242" />
+      <stop offset="100%" stop-color="#10162e" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6ef3ff" />
+      <stop offset="100%" stop-color="#a68dff" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <circle cx="400" cy="350" r="150" fill="#2e3b6d" />
+  <path d="M160 860c28-170 132-260 240-260s212 90 240 260" fill="#27325e" />
+  <rect x="220" y="925" width="360" height="10" rx="5" fill="url(#accent)" opacity="0.8" />
+</svg>
