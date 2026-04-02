@@ -419,10 +419,17 @@ function initContactForm() {
     if (!successPopup) {
       return;
     }
-    successPopup.textContent = message;
+    const popupTextNode = successPopup.querySelector(".form-popup__content");
+    if (popupTextNode) {
+      popupTextNode.textContent = message;
+    } else {
+      successPopup.textContent = message;
+    }
+    successPopup.setAttribute("aria-hidden", "false");
     successPopup.classList.add("show");
     window.setTimeout(() => {
       successPopup.classList.remove("show");
+      successPopup.setAttribute("aria-hidden", "true");
     }, 4200);
   }
 

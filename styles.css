@@ -880,17 +880,31 @@ body[data-page="projects"] .projects-grid {
 }
 
 .form-popup {
+  position: fixed;
+  inset: 0;
   display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(5, 7, 14, 0.7);
+  backdrop-filter: blur(3px);
+  z-index: 120;
+}
+
+.form-popup__content {
+  width: min(92vw, 420px);
   border: 1px solid #2f8f6a;
-  background: linear-gradient(160deg, rgba(20, 120, 78, 0.26), rgba(20, 120, 78, 0.1));
-  color: #dcffe9;
-  border-radius: 12px;
-  padding: 0.7rem 0.85rem;
-  font-weight: 600;
+  background: linear-gradient(160deg, rgba(20, 120, 78, 0.95), rgba(12, 82, 54, 0.95));
+  color: #effff6;
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42);
 }
 
 .form-popup.show {
-  display: block;
+  display: flex;
 }
 
 .form-note.is-error {
