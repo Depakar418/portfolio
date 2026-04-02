@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Depakar B</title>
+    <meta name="description" content="Contact page for WordPress development inquiries and project discussions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  </head>
+  <body data-page="contact" data-root=".">
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div data-include="header"></div>
+    <main>
+      <section class="section inner-hero">
+        <p class="eyebrow reveal">Contact Us</p>
+        <h1 class="reveal">Let's discuss your website goals</h1>
+        <p class="hero-copy reveal">Share your project details and I will suggest the right WordPress solution.</p>
+      </section>
+      <section class="section">
+        <div class="services-grid">
+          <article class="service-card reveal"><h3>Why Contact Me?</h3><p>Quick response, clear communication, and reliable delivery from planning to launch.</p></article>
+          <article class="service-card reveal"><h3>Availability</h3><p>Available for freelance and full-time opportunities for WordPress and performance projects.</p></article>
+          <article class="service-card reveal"><h3>Service Area</h3><p>Remote projects worldwide with timezone-aligned communication and milestone updates.</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="contact-grid">
+          <article class="timeline-item reveal contact-details">
+            <h3>Email</h3>
+            <p><a href="mailto:depakar418@gmail.com"><span class="contact-icon">✉</span> depakar418@gmail.com</a></p>
+            <h3>Phone</h3>
+            <p><a href="tel:+919344465429"><span class="contact-icon">☎</span> +91 93444 65429</a></p>
+            <h3>LinkedIn</h3>
+            <p>
+              <a href="https://www.linkedin.com/in/depakar418" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon linkedin-icon">in</span> Connect on LinkedIn
+              </a>
+            </p>
+            <h3>Location</h3>
+            <p><span class="contact-icon">📍</span> Bangalore, India</p>
+          </article>
+          <form
+            class="contact-form reveal"
+            id="contact-form"
+            data-formspree-endpoint="https://formspree.io/f/mreokkjq"
+            novalidate
+          >
+            <div class="form-popup" id="form-success-popup" role="status" aria-live="polite">Thanks for contacting me. I will contact you soon.</div>
+            <input type="hidden" name="_subject" value="New Portfolio Inquiry - Depakar B" />
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@email.com" required />
+            </label>
+            <label>
+              Service Needed
+              <input type="text" name="service" placeholder="WordPress website / WooCommerce / Redesign" required />
+            </label>
+            <label>
+              Project Details
+              <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </label>
+            <label class="hp-field" aria-hidden="true">
+              Leave this field empty
+              <input type="text" name="company_website" tabindex="-1" autocomplete="off" />
+            </label>
+            <label class="captcha-row">
+              Math check: <span id="captcha-question">2 + 3 = ?</span>
+              <input type="number" id="captcha-answer" name="captcha_answer" placeholder="Answer" required />
+            </label>
+            <button type="submit" class="btn btn-primary magnetic">Send Inquiry</button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite">Fill the form and pass math check to submit.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div data-include="footer"></div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
