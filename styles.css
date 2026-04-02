@@ -893,9 +893,10 @@ body[data-page="projects"] .projects-grid {
 }
 
 .consent-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.35rem;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.55rem;
   font-weight: 600;
   color: #dfe6ff;
 }
@@ -906,7 +907,6 @@ body[data-page="projects"] .projects-grid {
   margin-top: 0;
   accent-color: #27c57a;
   cursor: pointer;
-  justify-self: start;
   display: block;
 }
 
