@@ -46,7 +46,21 @@
             <input type="hidden" name="_subject" value="New Portfolio Inquiry - Depakar B" />
             <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
             <label>Email<input type="email" name="email" placeholder="name@email.com" required /></label>
-            <label>Service Needed<input type="text" name="service" placeholder="WordPress website / WooCommerce / Redesign" required /></label>
+            <label>
+              Service Needed
+              <select name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option value="WordPress Development">WordPress Development</option>
+                <option value="Custom Plugin Development">Custom Plugin Development</option>
+                <option value="WooCommerce Optimization">WooCommerce Optimization</option>
+                <option value="AMP Optimization">AMP Optimization</option>
+                <option value="Performance Optimization">Performance Optimization</option>
+                <option value="Technical SEO">Technical SEO</option>
+                <option value="Hire Me">Hire Me</option>
+                <option value="Other">Other</option>
+              </select>
+              <small class="field-hint">If you choose "Other", mention details in the Project Details field below.</small>
+            </label>
             <label>Project Details<textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea></label>
             <label class="hp-field" aria-hidden="true">Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
             <label class="captcha-row">Math check: <span id="captcha-question">2 + 3 = ?</span><input type="number" id="captcha-answer" name="captcha_answer" placeholder="Answer" required /></label>

@@ -839,6 +839,7 @@ body[data-page="projects"] .projects-grid {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   background: rgba(9, 11, 22, 0.9);
@@ -851,6 +852,31 @@ body[data-page="projects"] .projects-grid {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
+  color: #aeb5d4;
+  transition: opacity 0.15s ease;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #aeb5d4 50%), linear-gradient(135deg, #aeb5d4 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 12px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 2.2rem;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 0.32rem;
+  font-size: 0.78rem;
+  font-weight: 500;
   color: #aeb5d4;
 }
 
